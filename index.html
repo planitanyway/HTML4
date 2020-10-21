@@ -9,72 +9,59 @@
 	
 	.grid-container {
 		display: grid;
-		grid-template-columns: auto auto auto auto auto auto;
 		grid-gap: 10px;
 		background-color: #589;
 		padding: 10px;
 	}
 	
 	.grid-container > div {
-		background-color: saddlebrown
-		text-align: center, auto;
+		background-color: mediumvioletred;
+		text-align: center;
 		padding: 20px 0;
 		font-size: 30px;
 	}
 	
-	.header {
-		grid-column-start: 1;
-		grid-column-end: 6;
+	.item1 {
+		grid-column: 1 / span 2;
+		grid-row: 1;
 	}	
 	
-.menu {
-	grid-column-start: 2;
-	grid-column-end: 2;
+	.item2 {
+	grid-column: 3;
+	grid-row: 1 / span 2;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1em;
+	grid-template-columns: 1fr;
+	padding: 20px;
 	}
-.main
-	{
-	grid-column-start: 2;
-	grid-column-end: 3;
+.item5 {
+		grid-column: 1 / span 3;
+		grid-row: 3;
 	}
-.right
-	{
-	grid-column-start: 2;
-	grid-column-end: 6;
-	}
-	
-.footer
-	{
-	grid-column-start: 2;
-	grid-column-end: 6;
-	}
-	
+
 </style>
 </head>
 <body>
 	
 	<div class="grid-container">
 		
-	<div class="header">
+	<div class="item1">
 		<h1>Candles</h1></div>
 		
-	<div class="menu">
+	<div class="item2">
 		<div>Origin</div>
 		<div>DIY</div>
 		<div>Scents</div>
 		</div>
 		
-	<div class="main">
+	<div class="item3">
 		<h2>Did you know?</h2>
 		<p>The earliest use of candles is often atttibuted to the Ancient Egyptians, who made rushlights or torches by soaking the pithy core of reeds in melted animal fat. However, the rushlights had no wick like a true candle.</p></div>
 		
-	<div class="right">
+	<div class="item4">
 		<h1>Today's Candles</h1>
 	<p>Candles have come a long way since their initial use. While they are no longer used as a major source of light, they continue to grow in popularity and use. Today, candles serve to symbolize a celebration, ignite romance, soothe the senses, honor a ceremony, and accent home decors — casting a warm and lovely glow for all to enjoy.</p></div>
 		
-	<div class="footer"><a ref="https://i.pinimg.com/originals/6c/70/57/6c705766dd7f270565fd6cfafc4faf09.jpg">
+	<div class="item5"><a ref="https://i.pinimg.com/originals/6c/70/57/6c705766dd7f270565fd6cfafc4faf09.jpg">
 		<img src="photos/nca.jpg" alt="NCA" style="width: 225px; height: 225px;"></a></div>
 		</div>
 	
